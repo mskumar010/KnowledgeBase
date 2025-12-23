@@ -40,7 +40,7 @@ export function UserQueryNode({ id, selected, data }: NodeProps) {
           className="nowheel nodrag w-full bg-white border border-slate-200 rounded-lg p-3 min-h-[80px] text-xs text-slate-700 focus:outline-none focus:border-blue-500 resize-none"
           placeholder="Write your query here..."
           defaultValue={(data.query as string) || ""}
-          onChange={(e) => {
+          onChange={() => {
             // Optional: Local state update if needed, but for now defaultValue is enough for uncontrolled
             // We'll update the store onBlur to avoid too many re-renders/updates
           }}

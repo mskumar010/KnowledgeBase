@@ -1,11 +1,4 @@
-import {
-  MessageCircle,
-  Database,
-  Zap,
-  Layers,
-  Globe,
-  Type,
-} from "lucide-react";
+import { MessageCircle, Database, Zap, Type } from "lucide-react";
 
 export function Sidebar() {
   const onDragStart = (event: React.DragEvent, nodeType: string) => {
