@@ -1,0 +1,33 @@
+Testing Simple Workflow...
+Simple Status: 200
+Simple Body: {
+  "answer": "Output Node Reached (No Upstream Data)",
+  "logs": [
+    "Executing Node: Query (userQuery)",
+    "Executing Node: Output (output)"
+  ]
+}
+
+Testing RAG Workflow (Gemini)...
+RAG Gemini Status: 200
+RAG Gemini Body: {
+  "answer": "Error: API Rate Limit Exceeded (429). Please try again later.",
+  "logs": [
+    "Executing Node: Query (userQuery)",
+    "Executing Node: KB (knowledgeBase)",
+    "Executing Node: LLM (llmEngine)",
+    "Executing Node: Output (output)"
+  ]
+}
+
+Testing RAG Workflow (OpenAI)...
+RAG OpenAI Status: 200
+RAG OpenAI Body: {
+  "answer": "Error (OpenAI): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+  "logs": [
+    "Executing Node: Query (userQuery)",
+    "Executing Node: KB (knowledgeBase)",
+    "Executing Node: LLM (llmEngine)",
+    "Executing Node: Output (output)"
+  ]
+}

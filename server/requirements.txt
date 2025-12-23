@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+httpx
+pymupdf
+python-multipart
+requests
+sqlalchemy
+asyncpg
+python-dotenv
+openai
+google-generativeai
+pydantic>=2.0
+pydantic-settings
+groq

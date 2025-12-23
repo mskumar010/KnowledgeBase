@@ -1,0 +1,5 @@
+// Update to useFlowStore.ts definition
+// This is already supported by setNodes, but we might want a helper
+// For now we will use setNodes directly in the component or add a helper here.
+
+// We will add updateNodeData to the store

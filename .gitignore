@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+build/
+.DS_Store
+
+# Explicitly do NOT ignore .env as per user request
+!server/.env
